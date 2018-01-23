@@ -1,0 +1,23 @@
+%!TEX program = xelatex
+\documentclass[UTF8]{article}
+\usepackage{xeCJK}
+\usepackage[a4paper, margin=2cm]{geometry}
+
+\begin{document}
+    呵呵，用\verb+lilypond-book+ 整的文档可以混合文档和音乐。
+    例如，干这事：
+
+    \begin{lilypond}
+        \relative c' {
+          c2 g'2 \times 2/3 { f8 e d } c'2 g4
+        }
+    \end{lilypond}
+
+    选项用方括号括起。例如下面是一个片段，需要用片段选项：
+    \begin[fragment,quote,staffsize=26,verbatim]{lilypond}
+      c'4 f16
+    \end{lilypond}
+
+    大体积的音乐、文档也可以用
+    \verb+\lilypondfile+来把它放到分开的文件中。
+\end{document}
