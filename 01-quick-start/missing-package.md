@@ -7,7 +7,7 @@ $ apt-file update
 ```
 And then find which package containes the missing file:
 ```
-$ apt-file harmony.sty
+$ apt-file search harmony.sty
 texlive-music: /usr/share/texlive/texmf-dist/tex/latex/harmony/harmony.sty
 ```
 Now we have the name of for the missing package, `texlive-music`.
