@@ -1,11 +1,13 @@
+\version "2.18.2"
+
 \header {
   filename = 	"leap-frog.ly"
   title = 	"Leap-Frog"
   opus = 	"Op.64"
   composer =	"L. Streabbog"
+  copyright = \markup { "https://github.com/xtwxy/music-latex"}
+  tagline = ##f
 }
-
-\version "2.18.2"
 
 voiceone =  \relative c'' {
   \clef "treble"
@@ -27,6 +29,25 @@ voiceone =  \relative c'' {
   \times 2/3 { d,,8[ (fis a]}  d) r \times 2/3 { d,8[ (fis a]}  d) r            | %10
   \times 2/3 { d8[ (fis a]}  d) r \times 2/3 { a,8[ (d fis]}  a) r              | %11
   \times 2/3 { b,8[ (d g]}  b-5) r \times 2/3 { g,8[ (b d]}  g) r               | %12
+\break
+  \times 2/3 { d,8[ (g b]}  d) r \times 2/3 { d,8[ (g b]}  d) r                 | %13
+  \times 2/3 { d,8[ (fis a]}  d) r \times 2/3 { d,8[ (fis a]}  d) r             | %14
+  \times 2/3 { d8[ (fis a]}  d) r \times 2/3 { a,8[ (d fis]}  a) r              | %15
+\break
+  \times 2/3 { g,8[ (b_\markup{\italic \bold cresc.} d]} g) r \times 2/3 { g,8[ (b d]} g) r                   | %16
+  \times 2/3 { g,8-1[ (c-2 e-4]} g-5) r \times 2/3 { g,8[ (c e]} g) r           | %17
+  \times 2/3 { g,8[ (b d]} g) r \times 2/3 { g,8[ (b d]} g) r                   | %18
+\break
+  \times 2/3 { d8[ (fis a]}  d) r \times 2/3 { d,8[ (fis a]}  d) r              | %19
+  \times 2/3 { d,8[ (g b]}  d) r \times 2/3 { d,8[ (g b]}  d) r                 | %20
+\ottava #1
+\set Staff.ottavation = #"8"
+  \times 2/3 { g,8[ (c e]}  g) r \times 2/3 { g,8[ (c e]}  g) r                 | %21  
+\break
+  \times 2/3 { g,8[ (b d]}  g) r \times 2/3 { g,8[ (b d]}  g) r                 | %22  
+  \times 2/3 { d,8[ (fis a]}  d) r \times 2/3 { d,8[ (fis a]}  d) r             | %23  
+  \times 2/3 { g,8[ (b d]} \times 2/3 { g8[ d b]}  g) r r4                  | %24  
+\ottava #0                                                                                                                                           
 \break
 }
 
@@ -50,11 +71,24 @@ voicetwo =  \relative c' {
   d4 <fis c'> d <fis   c'>                       |  %11
   g,4 <b' g d> g, <b' g d>                       |  %12
 \break
+  g,4 <d' g b> g, <d' g b>                       |  %13
+  d4 <fis c'> d <fis   c'>                       |  %14
+  d4 <fis c'> d <fis   c'>                       |  %15
+\break
+  <g b>1                                         |  %16
+  <g c e>1                                       |  %17
+  <g b d>1                                       |  %18
+\break
+  <d fis c'>1                                     |  %19
+  <g b>1                                         |  %20
+  <g c e>1                                       |  %21
+\break
+  <g b d>1                                       |  %22
+  <d fis c'>1                                    |  %23
+  <g b>1                                         |  %24
+\break
 }
 
-\paper{
-}
-  
 \score {
    \context PianoStaff \with {
      instrumentName = "1."
