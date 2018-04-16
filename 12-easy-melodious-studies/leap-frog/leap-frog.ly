@@ -14,6 +14,7 @@ voiceone =  \relative c'' {
   \time 4/4
   \key c \major
   \tempo "Allegro moderato"
+  \easyHeadsOn
   \times 2/3 { c8-1[ (e-2 g-3]}  c-5) r \times 2/3 { e,8-1[ (g-2 c-4]}  e-5) r  | %1 
   \times 2/3 { d,8-1[ (f-2 a-3]}  d-5) r \times 2/3 { f,8-1[ (a-2 d-4]}  f-5) r | %2
   \times 2/3 { f8-5[ (d-4 b-2]}  g-1) r \times 2/3 { d'8-5[ (b-3 g-2]}  f-1) r  | %3
@@ -67,7 +68,8 @@ voicetwo =  \relative c' {
   \clef "bass"
   \time 4/4
   \key c \major
-  c,4^\markup{\italic legg:} <e g> c <e g> |  %1
+  \easyHeadsOn
+  c,4^\markup{\italic legg:} <e g> c <e g>       |  %1
   c4 <f a> c <f a>                               |  %2
   <c f g>1                                       |  %3
 \break
