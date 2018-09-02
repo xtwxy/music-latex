@@ -1,10 +1,10 @@
 \version "2.18.2"
 
 \header {
-  filename = 	"leap-frog.ly"
-  title = 	"Leap-Frog"
-  opus = 	"Op.64"
-  composer =	"L. Streabbog"
+  filename = 	"491-饮酒歌.ly"
+  title = 	"饮酒歌"
+  opus = 	""
+  composer =	"G.威尔第"
   copyright = \markup { "https://github.com/xtwxy/music-latex"}
   tagline = ##f
 }
@@ -48,7 +48,7 @@ voiceone =  \relative c'' {
 %14
   <d d'>8-. f8-. <d d'>8-.
 %15
-  d'8( \grace { ees16 d } cis8 d)
+  d'8 [( \acciaccatura { ees16 d } cis8 d)]
 %16
   <f, f'>4. ~ 
 %17
