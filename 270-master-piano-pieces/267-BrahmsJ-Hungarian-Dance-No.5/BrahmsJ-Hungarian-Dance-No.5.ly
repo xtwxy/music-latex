@@ -46,7 +46,7 @@ voiceone =  \relative a {
 %10
   <cis cis'>4. <a a'>8
 %11
-  <gis d e gis'>4. <a a'>16 <b b'>
+  <gis d' eis gis>4. <a a'>16 <b b'>
 %12
   <a cis fis a>2
 %13
@@ -62,7 +62,7 @@ voiceone =  \relative a {
 %18
   <a a'>4.( <fis fis'>8)
 %19
-  <eis b' dis e(>4. <fis fis'>16 <gis gis'>
+  <eis b' d eis>4.( <fis fis'>16 <gis gis'>
 %20
   <fis cis' fis>2)
 %21
@@ -104,29 +104,29 @@ voicetwo =  \relative a {
   \mergeDifferentlyDottedOn  
 
 %1
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %2
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %3
-  fis,8([ <b d b')>\arpeggio-. b,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. b,-^-. <d' b'>-.]
 %4
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %5
-  fis,8([ <b d b')>\arpeggio-. b,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. b,-^-. <d' b'>-.]
 %6
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %7
-  eis,8([ <cis' eis cis')>\arpeggio-. cis,-^-. <cis' eis b'>-.]
+  eis,8([ <cis' eis cis'>)\arpeggio-. cis,-^-. <cis' eis b'>-.]
 %8
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %9
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %10
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %11
-  fis,8([ <b d b')>\arpeggio-. b,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. b,-^-. <d' b'>-.]
 %12
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %13
   fis8-.[ a-. e-. <gis cis>-.]
 %14
@@ -134,31 +134,31 @@ voicetwo =  \relative a {
 %15
   cis,,8-.[ <gis'' b eis>-. r <cis, eis b'>-.]
 %16
-  fis,8 ( <a cis a')>\arpeggio-. <fis, fis'> r
+  fis,8 ( <a cis a'>)\arpeggio-. <fis, fis'> r
 %17
-  fis'8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis'8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %18
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %19
-  fis,8([ <b d b')>\arpeggio-. cis,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. cis,-^-. <d' b'>-.]
 %20
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %21
-  fis,8([ <b d b')>\arpeggio-. cis,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. cis,-^-. <d' b'>-.]
 %22
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %23
-  eis,8([ <cis' eis cis')>\arpeggio-. cis,-^-. <cis' eis b'>-.]
+  eis,8([ <cis' eis cis'>)\arpeggio-. cis,-^-. <cis' eis b'>-.]
 %24
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %25
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %26
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %27
-  fis,8([ <b d b')>\arpeggio-. cis,-^-. <d' b'>-.]
+  fis,8([ <b d b'>)\arpeggio-. cis,-^-. <d' b'>-.]
 %28
-  fis,8([ <a cis a')>\arpeggio-. cis,-^-. <cis' a'>-.]
+  fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
 %29
   <fis a d>8-.[ <a d fis>-. <e gis cis>-. <gis cis e>-.]
 %30

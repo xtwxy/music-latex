@@ -4,7 +4,7 @@
   filename = 	"491-饮酒歌.ly"
   title = 	"饮酒歌"
   opus = 	""
-  composer =	"G.威尔第"
+  composer =	"Giuseppe Verdi"
   copyright = \markup { "https://github.com/xtwxy/music-latex"}
   tagline = ##f
 }
