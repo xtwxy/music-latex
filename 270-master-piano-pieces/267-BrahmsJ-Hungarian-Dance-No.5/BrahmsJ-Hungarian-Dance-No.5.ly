@@ -92,6 +92,64 @@ voiceone =  \relative a {
   <b b'>16 ([a-2) <a a'> (gis-2)] <gis gis'>8.\<[ ( <cis cis'>16)]
 %32
   <fis, cis' fis>4\< ( <fis' fis'>8\sf) r
+%33
+\bar ".|:"
+  <cis e cis'>4-. <cis e cis'>4-.
+%34
+  <d fis d'>4.-.-> <cis e cis'>8-.
+%35
+  r8 <b d b'>4
+  <<
+    {ais'16( b} \\
+    {d,8( }
+  >>
+%36
+  <<
+    {cis'16 b ais cis b8)} \\
+    {d,4.)}
+  >>
+  r8
+%37
+  <b d b'>4-. <b d b'>4-.
+%38
+  <cis e cis'>4.-.-> <b d b'>8-.
+%39
+  r8 <a cis a'>4
+  <<
+    {gis'16( a} \\
+    {cis,8( }
+  >>
+%40
+  <<
+    {b'16 a gis b a8)} \\
+    {cis,4.)}
+  >>
+  r8
+%41
+  <b gis'>4-.-- <b gis'>-.--
+%42
+  <d b'>8-. <cis a'>4-.-- <b gis'>8~
+%43
+  <b gis'>8 
+  <<
+    {<a fis'>4 <gis eis'>16( <a fis'>} \\
+    {cis4.(}
+  >>
+%44
+  <<
+    {<b gis'>16 <a fis'> <gis eis'> <b gis'> <a fis'>4)} \\
+    {d4 cis)}
+  >>
+%45
+  <cis eis gis cis>8-. r8 r8. <cis, cis'>16-.
+%46
+  <dis dis'>8[ r8 <eis eis'>] r8
+%47
+  \acciaccatura gis' 
+  <fis, cis' fis>8-. <fis cis' fis>4-> eis'16 fis
+%48
+  \times 4/5 {<gis, d' gis>16 fis' eis fis gis} <fis, cis' fis>8-. r8
+\bar ":|."  
 }
 
 voicetwo =  \relative a {
@@ -166,7 +224,40 @@ voicetwo =  \relative a {
 %31
   cis,8-.[ <cis' eis cis'>-. r <cis eis b'>-.]
 %32
-  <fis, a cis a'>8\arpeggio-. r <fis, fis'> r
+  <fis, a cis a'>8\arpeggio-. r <fis, fis'>-. r
+%33
+\bar ".|:"
+  ais'8-.[ <fis' ais e'>-. fis,-. <fis' ais e'>-.]
+%34
+  ais,8-.[ <fis' ais fis'>-. fis,-. <fis' ais e'>-.]
+%35
+  b,8-.[ <fis' b d>-. fis,-. <fis' b d>-.]
+%36
+  b,8-.[ <fis' b d>-. a,-. <fis' b d>-.]
+%37
+  gis,8-.[ <e' gis d'>-. e,-. <e' gis d'>-.]
+%38
+  gis,8-.[ <e' gis e'>-. e,-. <e' gis d'>-.]
+%39
+  gis,8-.[ <e' a cis>-. e,-. <e' a cis>-.]
+%40
+  gis,8-.[ <e' a cis>-. e,-. <e' a cis>-.]
+%41
+  eis,8-.[ <cis' b'>-. cis,-. <cis' b'>-.]
+%42
+  eis,8  [ <cis' cis'> cis, <cis' b'>]
+%43
+  d,8    [ <a' d a'> a, <a' d a'>]
+%44
+  d,8    [ <a' d a'> a, <cis' fis a>]
+%45
+  \acciaccatura{cis,,16 cis'} <eis' gis cis eis>8-. r8 r8. <cis, cis'>8-.
+%46
+  <dis dis'>8-. [ r8 <eis eis'>8-.] r8
+%47
+  <fis, fis'>8-. <a' cis a'>4-> r8
+%48
+  <fis b d b'>4\arpeggio-> <fis a cis a'>8-. r8
 }
 
 \score {
@@ -190,7 +281,7 @@ voicetwo =  \relative a {
     }
   }
   \midi {
-    \tempo 4 = 80
+    \tempo 4 = 120
   }
 
 }
