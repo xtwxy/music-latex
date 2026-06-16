@@ -8,11 +8,18 @@
     例如，干这事：
 
     \begin{lilypond}
+      \paper {
+  #(define fonts
+    (make-pango-font-tree "Noto Serif CJK SC"
+                          "Noto Sans CJK SC"
+                          "Noto Sans Mono CJK SC"
+                          1))
+}
         \relative c' {
           c2 g'2 \times 2/3 { f8 e d } c'2 g4
         }
         \addlyrics {
-            \text{Hello}
+            Hello!你好！
         }
     \end{lilypond}
 
@@ -23,4 +30,31 @@
 
     大体积的音乐、文档也可以用
     \verb+\lilypondfile+来把它放到分开的文件中。
+
+    \begin{lilypond}
+        \score {
+            \relative c' {
+                c2 g'2 \times 2/3 { f8 e d } c'2 g4
+            }
+        }
+        \markup {
+            die, die, die, die, 死!
+        }
+    \end{lilypond}
+
+    \begin{lilypond}
+        melody = \relative c' {
+            \time 4/4
+            c4 d e f
+        }
+        verse = \lyricmode {
+            你 好 世 界
+        }
+        \score {
+            <<
+            \new Voice = "soprano" { \melody }
+            \new Lyrics \lyricsto "soprano" { \verse }
+            >>
+        }
+    \end{lilypond}
 \end{document}

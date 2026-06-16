@@ -1,4 +1,14 @@
-\version "2.18.2"
+\version "2.20.0"
+
+\paper {
+  #(define fonts
+    (make-pango-font-tree
+      "Noto Serif CJK SC"      ; 主要的衬线(roman)字体，支持中文
+      "Noto Sans CJK SC"       ; 无衬线(sans)字体
+      "Noto Sans Mono CJK SC"  ; 等宽(typewriter)字体
+      1                        ; ← 添加这个因子，通常为1
+    ))
+}
 
 \header {
   filename = 	"491-饮酒歌.ly"
