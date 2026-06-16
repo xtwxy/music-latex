@@ -1,0 +1,18 @@
+%!TEX program = xelatex
+\documentclass[UTF8]{article}
+\usepackage{xeCJK}
+\usepackage[a4paper, margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{lilypond}
+\relative c' {
+    \time 2/4
+
+    c2 g'2 \times 2/3 { f8 e d } c'2 g4
+}
+\end{lilypond}
+
+\lilypondfile[quote,noindent]{ly/section-01.ly}
+
+\end{document}
