@@ -93,7 +93,7 @@ voiceone =  \relative a {
 %32
   <fis, cis' fis>4\< ( <fis' fis'>8\sf) r
 %33
-\bar ".|:"
+\repeat volta 1 {
   <cis e cis'>4-. <cis e cis'>4-.
 %34
   <d fis d'>4.-.-> <cis e cis'>8-.
@@ -148,8 +148,9 @@ voiceone =  \relative a {
   \acciaccatura gis' 
   <fis, cis' fis>8-. <fis cis' fis>4-> eis'16 fis
 %48
-  \times 4/5 {<gis, d' gis>16 fis' eis fis gis} <fis, cis' fis>8-. r8
-\bar ":|."  
+   \times 4/5 {<gis, d' gis>16 fis' eis fis gis} <fis, cis' fis>8-. r8
+  } % repeat
+
 }
 
 voicetwo =  \relative a {
@@ -226,7 +227,7 @@ voicetwo =  \relative a {
 %32
   <fis, a cis a'>8\arpeggio-. r <fis, fis'>-. r
 %33
-\bar ".|:"
+\repeat volta 1 {
   ais'8-.[ <fis' ais e'>-. fis,-. <fis' ais e'>-.]
 %34
   ais,8-.[ <fis' ais fis'>-. fis,-. <fis' ais e'>-.]
@@ -258,11 +259,13 @@ voicetwo =  \relative a {
   <fis, fis'>8-. <a' cis a'>4-> r8
 %48
   <fis b d b'>4\arpeggio-> <fis a cis a'>8-. r8
+  } % repeat
+
 }
 
 \score {
    \context PianoStaff \with {
-     instrumentName = ""
+     instrumentName = "Piano"
    }
  
   << 
