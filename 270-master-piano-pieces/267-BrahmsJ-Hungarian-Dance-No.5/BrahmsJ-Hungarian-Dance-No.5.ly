@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 
 \header {
   filename = 	"Hungarian Dance No.5.ly"
@@ -17,7 +17,7 @@ voiceone =  \relative a {
   \tempo "Allegro"
   %\easyHeadsOn
   \mergeDifferentlyHeadedOn
-  \mergeDifferentlyDottedOn  
+  \mergeDifferentlyDottedOn
 
 %1
   cis4.\f-1( fis8)
@@ -42,7 +42,7 @@ voiceone =  \relative a {
 %8
   fis,2-1
 %9
-  <cis' cis'>4.\< <fis fis'>16 <a a'>\! 
+  <cis' cis'>4.\< <fis fis'>16 <a a'>\!
 %10
   <cis cis'>4. <a a'>8
 %11
@@ -83,7 +83,7 @@ voiceone =  \relative a {
   <gis d' eis gis>4. <a a'>16 <b b'>
 %28
   <a cis fis a>2
-\ottava #0                                                                                                                                           
+\ottava #0
 %29
   d16\p-1 [ e-2 <fis-1 fis'-5> d-2] cis-1[ d-2 <e-1 e'-5> cis-2]
 %30
@@ -93,6 +93,7 @@ voiceone =  \relative a {
 %32
   <fis, cis' fis>4\< ( <fis' fis'>8\sf) r
 %33
+
 \repeat volta 1 {
   <cis e cis'>4-. <cis e cis'>4-.
 %34
@@ -130,7 +131,7 @@ voiceone =  \relative a {
 %42
   <d b'>8-. <cis a'>4-.-- <b gis'>8~
 %43
-  <b gis'>8 
+  <b gis'>8
   <<
     {<a fis'>4 <gis eis'>16( <a fis'>} \\
     {cis4.(}
@@ -145,7 +146,7 @@ voiceone =  \relative a {
 %46
   <dis dis'>8[ r8 <eis eis'>] r8
 %47
-  \acciaccatura gis' 
+  \acciaccatura gis'
   <fis, cis' fis>8-. <fis cis' fis>4-> eis'16 fis
 %48
    \times 4/5 {<gis, d' gis>16 fis' eis fis gis} <fis, cis' fis>8-. r8
@@ -155,12 +156,13 @@ voiceone =  \relative a {
 
 voicetwo =  \relative a {
   \clef "bass"
+  %\partial 8
   \time 2/4
   \key a \major
   %\easyHeadsOn
   \override Stem.direction = #DOWN
   \mergeDifferentlyHeadedOn
-  \mergeDifferentlyDottedOn  
+  \mergeDifferentlyDottedOn
 
 %1
   fis,8([ <a cis a'>)\arpeggio-. cis,-^-. <cis' a'>-.]
@@ -227,6 +229,7 @@ voicetwo =  \relative a {
 %32
   <fis, a cis a'>8\arpeggio-. r <fis, fis'>-. r
 %33
+
 \repeat volta 1 {
   ais'8-.[ <fis' ais e'>-. fis,-. <fis' ais e'>-.]
 %34
@@ -263,19 +266,23 @@ voicetwo =  \relative a {
 
 }
 
-\score {
-   \context PianoStaff \with {
-     instrumentName = "Piano"
-   }
- 
-  << 
-    \context Staff = "one" <<
-      \voiceone
-    >>
-    \context Staff = "two" <<
-      \voicetwo
-    >>
+pianoPiece = {
+  \context PianoStaff \with {
+    instrumentName = "Piano"
+  }
+
+  <<
+    \context Staff = "one" << \voiceone >>
+    \context Staff = "two" << \voicetwo >>
   >>
+}
+
+\score {
+  %\unfoldRepeats {
+  %  \repeat unfold 1 { \pianoPiece }
+  %}
+
+  \pianoPiece
 
   \layout{
     \context {
@@ -283,8 +290,11 @@ voicetwo =  \relative a {
       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
     }
   }
+
   \midi {
     \tempo 4 = 120
+    %midiMinimumVolume = #0.8
+    %midiMaximumVolume = #0.9
   }
 
 }
